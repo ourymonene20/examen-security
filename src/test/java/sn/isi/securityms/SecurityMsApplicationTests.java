@@ -12,29 +12,29 @@ import sn.isi.securityms.services.AccountServiceImpl;
 @SpringBootTest
 class SecurityMsApplicationTests {
 
-	@Autowired
-	private AppRoleRepository roleRepository;
 	/*@Autowired
-	private AccountServiceImpl useSercice;*/
+	private AppRoleRepository roleRepository;
+	@Autowired
+	private AccountServiceImpl useSercice;
 
-	/*public SecurityMsApplicationTests(AppRoleRepository roleRepository*//* AccountServiceImpl useSercice*//*) {
+	public SecurityMsApplicationTests(AppRoleRepository roleRepository, AccountServiceImpl useSercice) {
 		this.roleRepository = roleRepository;
-		//this.useSercice = useSercice;
+		this.useSercice = useSercice;
 	}
-*/
+
 	@Test
 	void contextLoads() {
 	}
 
 
-
-	@Test
+*/
+	/*@Test
 	void addRoles(){
-		//AppRolesDto dto  = new AppRolesDto();
+		//AppRoles dto  = new AppRolesDto(AppRoles.class);
 		AppRoles dto = new AppRoles();
-		dto.setName("Administrateur");
-		//roleRepository.save(dto);
+		dto.setName("MARKITING");
+		roleRepository.save(dto);
 		//roleRepository.save(new AppRolesDto(null, "Administrateur"));
 		//useSercice.saveRoles(new AppRolesDto(null, "Utilisateur"));
-	}
+	}*/
 }

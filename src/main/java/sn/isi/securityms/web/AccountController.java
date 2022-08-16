@@ -50,21 +50,7 @@ public class AccountController {
         return ResponseEntity.created(uri).body(userService.saveRoles(role));
     }
 
-    @RequestMapping("/hello")
-    public String home() {
-        return "Test docker app security reussi!";
-    }
 
-    @RequestMapping("/test")
-    public String test() {
-        return "Test docker app security reussi!";
-    }
-
-    /*@PostMapping("/role/addtouser")
-    public ResponseEntity<?>addRoleToUser(@RequestBody RoleToUserForm form) {
-        userService.addRoleToUser(form.getUsername(), form.getRoleName());
-        return ResponseEntity.ok().build();
-    }*/
 
 }
 
